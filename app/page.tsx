@@ -329,7 +329,6 @@ export default function Home() {
                       required
                       value={registrationForm.name}
                       onChange={(e) => setRegistrationForm(prev => ({ ...prev, name: e.target.value }))}
-                      placeholder="John Doe"
                       className="w-full bg-gray-800 text-white border-gray-700 placeholder:text-gray-400"
                     />
                   </div>
@@ -341,7 +340,6 @@ export default function Home() {
                       required
                       value={registrationForm.email}
                       onChange={(e) => setRegistrationForm(prev => ({ ...prev, email: e.target.value }))}
-                      placeholder="john@example.com"
                       className="w-full bg-gray-800 text-white border-gray-700 placeholder:text-gray-400"
                     />
                   </div>
@@ -362,7 +360,6 @@ export default function Home() {
                           setRegistrationForm(prev => ({ ...prev, phone: val }));
                         }
                       }}
-                      placeholder="9876543210"
                       className="w-full bg-gray-800 text-white border-gray-700 placeholder:text-gray-400"
                     />
                   </div>
