@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { quizQuestions, departments, Question } from "../lib/quizData";
+import { quizQuestions, Question } from "../lib/quizData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -218,7 +218,6 @@ export default function Home() {
     
     const bestDepartment1 = sortedScores.length > 0 ? sortedScores[0][0] : "None";
     const bestDepartment2 = sortedScores.length > 1 ? sortedScores[1][0] : "";
-    const combinedDepartments = bestDepartment2 ? `${bestDepartment1} & ${bestDepartment2}` : bestDepartment1;
 
     try {
       // Log to Google Sheets behind the scenes
