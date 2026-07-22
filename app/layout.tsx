@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "IEC Department Classifier",
   description:
     "Find the best department for you with our intelligent classification system",
-  themeColor: "#0a0a0a",
 };
 
 export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
